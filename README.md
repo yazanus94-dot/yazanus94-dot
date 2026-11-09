@@ -1,16 +1,15 @@
 ## Hi there 👋
 
-<!--
-**yazanus94-dot/yazanus94-dot** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hi, I'm Yazan 👋
 
-Here are some ideas to get you started:
+I'm a **QA Engineer & AI Trainer** with 8+ years of experience across **Software Engineering and Biomedical Engineering**.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I have experience working on worldwide remote and onsite projects.
+
+- 🔭 Working on QA Testing, AI Training & Software Quality.
+- 🌱 Continuously learning Test Automation, AI, and Software Engineering.
+- 👯 Open to collaborating on worldwide remote and onsite projects.
+- 💬 Ask me about Software Testing, AI Evaluation, Biomedical Engineering, and QA.
+- 🤝 Interested in connecting with professionals worldwide.
+
+**Let's build better technology together!** 🚀
