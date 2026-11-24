@@ -1,62 +1,84 @@
 <img width="1906" height="1338" alt="image" src="https://github.com/user-attachments/assets/671c0487-b047-410c-8340-0777197155f5" />
 
-# Hi, I'm Yazan 👋
+# Yazan Aljabari 👋
 
-**QA Engineer & AI Trainer** with 8+ years across software engineering and biomedical
-engineering. This profile highlights verified work in **biomedical signal processing,
-PhysioNet-style research, scientific machine learning and benchmark evaluation**.
+**AI Agent Tester · AI Evaluation Specialist · Quality Assurance Engineer**
 
-> I have **not** participated in an official PhysioNet Challenge. All datasets used are public
-> research databases or synthetic fixtures; synthetic experiments are never presented as
-> clinical validation.
+[LinkedIn](https://www.linkedin.com/in/yazan-aljabari-878202139/) · [GitHub](https://github.com/yazanus94-dot)
 
----
+## Professional summary
 
-## Featured biomedical signal-processing & ML work
+Biomedical Engineering graduate and Information Technology postgraduate student with a technical
+focus on AI evaluation, software quality assurance and LLM testing. I build reproducible,
+evidence-backed QA projects covering model-output validation, instruction-following evaluation,
+response consistency, safety and privacy testing, annotation quality control, RLHF preference
+evaluation and structured defect reporting.
 
-### [Physiologically-Modeled-Synthetic-Signals-BME-](https://github.com/yazanus94-dot/Physiologically-Modeled-Synthetic-Signals-BME-)
-**Synthetic and real ECG signal processing, R-peak detection and AAMI arrhythmia classification.**
-- **Signals/methods:** ECG (MIT-BIH, synthetic ECGSYN-like), zero-phase SOS band-pass, one-to-one R-peak matching, AAMI mapping, patient-disjoint DS1/DS2 splits, group-fold CV.
-- **Verified:** 285 pytest tests pass locally; CI green. Scientific fixes include R-amplitude feature alignment, record metadata units and annotation filtering.
-- **Technical report / task:** [project 1 README](https://github.com/yazanus94-dot/Physiologically-Modeled-Synthetic-Signals-BME-/blob/main/project-1-ecg-arrhythmia/README.md) · [denoising benchmark task](https://github.com/yazanus94-dot/Physiologically-Modeled-Synthetic-Signals-BME-/blob/main/benchmark-tasks/mitbih_nstdb_denoising_benchmark/TASK.md)
-- **Status:** ✅ complete; ⚠️ committed real-data metric files predate the R-amplitude correction and require regeneration after licensed dataset access.
+I am interested in evaluating real-world AI agents: assessing task completion and user
+experience, identifying agent-control issues, and giving structured feedback that improves AI
+reliability and usability.
 
-### [ecg-physionet-robustness-benchmark](https://github.com/yazanus94-dot/ecg-physionet-robustness-benchmark)
-**Patient-independent ECG arrhythmia classification with noise-robustness evaluation and graded benchmark tasks.**
-- **Signals/methods:** MIT-BIH beats, NSTDB noise, 0.5–40 Hz SOS filtering, 5-fold patient-grouped CV, OOF metrics, SNR sweeps, class-weighted models.
-- **Verified:** 143 core tests + 23 benchmark-task tests pass; CI green with grader execution. Fold-local feature selection, incomplete-record handling and documentation corrected.
-- **Technical report / tasks:** [technical report](https://github.com/yazanus94-dot/ecg-physionet-robustness-benchmark/blob/master/reports/TECHNICAL_REPORT.md) · [denoising task](https://github.com/yazanus94-dot/ecg-physionet-robustness-benchmark/blob/master/tasks/ecg_denoising_quality/TASK.md) · [arrhythmia task](https://github.com/yazanus94-dot/ecg-physionet-robustness-benchmark/blob/master/tasks/arrhythmia_classification/TASK.md)
-- **Status:** ✅ benchmark tasks complete and graded; ⚠️ choice of pure-noise NSTDB records, nested model selection and confidence intervals require an explicit scientific decision.
+## Core competencies
 
-### [SleepPSG-CI](https://github.com/yazanus94-dot/SleepPSG-CI)
-**Independent multimodal PSG cognitive-impairment benchmark with authorized-data safeguards.**
-- **Signals/methods:** EEG/ECG/EOG/EMG/RESP/SpO₂, 30 s epochs, unit-aware feature eligibility, leave-one-site-out evaluation, age-conditioned I' metric, patient-cluster bootstrap CIs.
-- **Verified:** 196 tests pass; CI green. Scoreability, cross-site schema alignment and filter-padding guards corrected.
-- **Report / task:** [benchmark task](https://github.com/yazanus94-dot/SleepPSG-CI/blob/main/benchmark/TASK.md) · [real-data workflow (not executed)](https://github.com/yazanus94-dot/SleepPSG-CI/blob/main/docs/REAL_DATA_VALIDATION.md)
-- **Status:** ✅ synthetic benchmark and safeguards complete; ⏳ real EDF validation outstanding (credentials, personal terms acceptance and data access required).
+- AI Agent Evaluation and Quality Assessment
+- LLM Response Evaluation · Instruction Following · Task Completion
+- AI Output Accuracy and Consistency
+- Human Feedback and Preference Evaluation (RLHF)
+- Quality Scoring and Evaluation Rubrics
+- Error Identification and Defect Reporting
+- AI Safety and Privacy Testing
+- Prompt Robustness and Regression Testing
+- Data and Annotation Quality Control
+- Technical Documentation and Evidence-Based Reporting
+- Python · GitHub · pytest · CI/CD
 
-### [RespiraQA](https://github.com/yazanus94-dot/RespiraQA)
-**Respiratory-sound classification and AI quality assurance with patient-independent splitting.**
-- **Signals/methods:** Lung sounds, librosa acoustic features, patient-level `StratifiedGroupKFold`, imbalance-aware baselines, controlled noise/amplitude/truncation robustness probes.
-- **Verified:** 61 tests pass; CI green (install failure fixed by Python 3.12 alignment). Synthetic reports now carry explicit provenance banners.
-- **Methodology / workflow:** [methodology](https://github.com/yazanus94-dot/RespiraQA/blob/main/docs/methodology.md) · [real ICBHI workflow (not executed)](https://github.com/yazanus94-dot/RespiraQA/blob/main/docs/REAL_DATA_VALIDATION.md)
-- **Status:** ✅ synthetic end-to-end demo complete; ⏳ real ICBHI validation outstanding (licensed dataset must be obtained and terms accepted by me).
+## Featured AI evaluation & QA projects
 
----
+### [AI-Testing-QA](https://github.com/yazanus94-dot/AI-Testing-QA)
+**A reproducible five-layer AI QA suite for LLM outputs, annotations, RLHF data, RAG groundedness and prompt robustness.**
+- **Methods:** instruction-compliance, factual-constraint, safety, PII-leak and prompt-injection checks; Cohen/Fleiss kappa; win rates with confidence intervals; citation/attribution QA; prompt-variant consistency.
+- **Verified:** public repository with `main` as default branch; CI run [44482220370](https://github.com/yazanus94-dot/AI-Testing-QA/actions/runs/44482220370) completed successfully. Produces `qa_report.md` / `qa_report.json` with a CI-friendly quality gate.
+- **Evidence:** [repository README](https://github.com/yazanus94-dot/AI-Testing-QA#readme) · [latest CI](https://github.com/yazanus94-dot/AI-Testing-QA/actions).
 
-## What this work demonstrates
+### [LLM_Data-Annotation_Projects](https://github.com/yazanus94-dot/LLM_Data-Annotation_Projects)
+**Three connected projects that test model behaviour, audit training labels and analyse rated model failures.**
+- **Methods:** 25-case output test harness with 15 reusable checks; annotation validity, duplicates, conflicting labels and inter-annotator agreement; an 8-type/4-severity RLHF error taxonomy.
+- **Verified:** documented run caught 11 failures including a PII leak and unsafe content with a **NO-GO** verdict; error-analysis corpus of 34 reviews (avg 3.18/5). CI run [42970884875](https://github.com/yazanus94-dot/LLM_Data-Annotation_Projects/actions/runs/42970884875) succeeded. All data is synthetic with planted defects.
+- **Evidence:** [repository README](https://github.com/yazanus94-dot/LLM_Data-Annotation_Projects#readme) · [latest CI](https://github.com/yazanus94-dot/LLM_Data-Annotation_Projects/actions).
 
-- Signal-processing correctness: sampling-rate verification, zero-phase filtering, alignment,
-  segmentation boundaries and explicit input validation.
-- Evaluation rigor: patient/subject-level splits, fold-local preprocessing, OOF reporting,
-  dummy baselines, bootstrap CIs where applicable.
-- Reproducibility: fixed seeds, pinned dependencies, deterministic fixtures, documented commands,
-  generated expected outputs and automated graders.
-- Scientific honesty: synthetic results labelled as synthetic; real-data results reported only
-  after legitimate data access; no hidden labels, no fabricated metrics.
+### [RLHF-Preference-Data-QA](https://github.com/yazanus94-dot/RLHF-Preference-Data-QA)
+**Two dependency-free Python toolkits for evaluating LLM responses and auditing RLHF preference data.**
+- **Methods:** property checks, weighted rubric scoring, flakiness detection and a release gate; exact binomial tests for position bias, likelihood-weighted verbosity bias, Cohen's kappa and transitivity-cycle detection.
+- **Verified:** repository documents **43 tests** and CI on Python 3.11/3.12/3.13; run [42772026401](https://github.com/yazanus94-dot/RLHF-Preference-Data-QA/actions/runs/42772026401) succeeded. Synthetic data with deliberately injected defects; no claim about any real model or annotator pool.
+- **Evidence:** [repository README](https://github.com/yazanus94-dot/RLHF-Preference-Data-QA#readme) · [latest CI](https://github.com/yazanus94-dot/RLHF-Preference-Data-QA/actions).
 
-## Contact
+### [QA-Software-Testing-Projects](https://github.com/yazanus94-dot/QA-Software-Testing-Projects)
+**A five-discipline QA portfolio covering web E2E, API, mobile, performance and AI/LLM quality.**
+- **Methods:** Playwright POM with a11y/visual checks; Postman/Newman plus API-to-database integrity; Appium Android; k6 + pytest SLO gates; Promptfoo and deterministic-mock LLM safety tests.
+- **Verified:** 46 offline AI/LLM tests documented; eight CI jobs. Run [45021910554](https://github.com/yazanus94-dot/QA-Software-Testing-Projects/actions/runs/45021910554) succeeded.
+- **Evidence:** [repository README](https://github.com/yazanus94-dot/QA-Software-Testing-Projects#readme) · [latest CI](https://github.com/yazanus94-dot/QA-Software-Testing-Projects/actions).
 
-- 🔭 Working on QA automation, biomedical signal processing and scientific ML evaluation.
-- 💬 Ask me about signal processing, test automation, AI evaluation and reproducible benchmarks.
-- 🤝 Open to remote and onsite collaboration worldwide.
+## Education
+
+- **Master's studies in Information Technology** — Arizona State University (ASU Online); security-related coursework.
+- **B.Sc. Biomedical Engineering** — Jordan University of Science and Technology, 2018.
+
+## Technical skills
+
+Python · Software QA · AI/LLM Evaluation · GitHub · pytest · Playwright · API Testing · Data Quality · Statistical Evaluation · Documentation · CI/CD
+
+## Languages
+
+Arabic — Native · English — Professional working proficiency · German — Basic knowledge
+
+## Professional interests
+
+AI Agent Testing · AI Reliability · Human-AI Interaction · AI Safety · Model Evaluation · Quality Assurance · AI User Experience
+
+## Additional published work
+
+Biomedical signal-processing and benchmark work is also available in
+[Physiologically-Modeled-Synthetic-Signals-BME-](https://github.com/yazanus94-dot/Physiologically-Modeled-Synthetic-Signals-BME-),
+[ecg-physionet-robustness-benchmark](https://github.com/yazanus94-dot/ecg-physionet-robustness-benchmark),
+[SleepPSG-CI](https://github.com/yazanus94-dot/SleepPSG-CI) and
+[RespiraQA](https://github.com/yazanus94-dot/RespiraQA).
